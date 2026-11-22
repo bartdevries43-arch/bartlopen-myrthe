@@ -111,61 +111,66 @@ const zo = (o) => ({ day: "zo", dayLabel: "Zondag",                   kind: KIND
 
 const PLAN = [
   /* ---------- Fase 1 · Weer op gang ---------- */
-  { week: 1, dates: "23–29 nov", phase: "Fase 1 · Weer op gang", note: "Je hebt een maand niet gelopen, dus we beginnen rustig. Je halve marathon van april zit nog in je lijf, die basis komt snel terug.", sessions: [
-    d1({ zone: "duur", km: 5, title: "Weer beginnen: 5 km rustig", goal: "Lekker lopen, verder niets", why: "Je laatste 5 km ging op het eind moeizaam. Dat is heel normaal na een pauze, en meestal komt het door een te snelle start. Vandaag doe je het andersom: zo rustig dat het bijna te makkelijk voelt. Even wandelen mag.", blocks: [
-      "5 km op 6:30–7:10/km",
+  { week: 1, dates: "23–29 nov", phase: "Fase 1 · Weer op gang", note: "Je halve van april zit nog in je lijf, dus we beginnen meteen met 12 km in het weekend. Wel rustig: tempo maakt nu niet uit, kilometers wel.", sessions: [
+    d1({ zone: "duur", km: 6, title: "Weer beginnen: 6 km rustig", goal: "Lekker lopen, verder niets", why: "Je laatste 5 km ging op het eind moeizaam. Dat is heel normaal na een pauze, en meestal komt het door een te snelle start. Vandaag doe je het andersom: zo rustig dat het bijna te makkelijk voelt. Even wandelen mag.", blocks: [
+      "6 km op 6:30–7:10/km",
       "Begin rustiger dan je wil, de eerste kilometer mag echt sloom",
       "Even wandelen? Prima, daarna gewoon weer door",
     ] }),
-    d2({ zone: "lang", km: 7, title: "7 km rustig", goal: "Je eerste weekendloop", blocks: [
-      "7 km op 6:40–7:20/km",
+    d2({ zone: "lang", km: 12, title: "12 km rustig", goal: "Meteen een mooie lange loop", why: "Je liep in april een halve marathon aan één stuk, dus 12 km rustig kan je lijf prima aan. Het geheim is het tempo: zo rustig dat je de hele tijd kunt praten. Dan kom je fris thuis.", blocks: [
+      "12 km op 6:40–7:20/km",
       "Kun je nog praten? Dan zit je goed",
+      "Neem iets te drinken mee als je dat fijn vindt",
     ] }),
   ]},
-  { week: 2, dates: "30 nov–6 dec", phase: "Fase 1 · Weer op gang", note: "Iets langer in het weekend. Doordeweeks voor het eerst een paar korte versnellingen.", sessions: [
-    d1({ zone: "duur", km: 6, title: "6 km met versnellingen", goal: "Je benen wakker maken", blocks: [
-      "5 km rustig op 6:30–7:10/km",
+  { week: 2, dates: "30 nov–6 dec", phase: "Fase 1 · Weer op gang", note: "In het weekend 14 km. Doordeweeks voor het eerst een paar korte versnellingen.", sessions: [
+    d1({ zone: "duur", km: 7, title: "7 km met versnellingen", goal: "Je benen wakker maken", blocks: [
+      "6 km rustig op 6:30–7:10/km",
       "Daarna 4× 20 sec soepel versnellen, met 1 min wandelen ertussen",
       "Soepel betekent: snel, maar ontspannen. Nooit sprinten",
     ] }),
-    d2({ zone: "lang", km: 9, title: "9 km rustig", goal: "Weer wennen aan langer lopen", blocks: ["9 km op 6:40–7:20/km"] }),
+    d2({ zone: "lang", km: 14, title: "14 km rustig", goal: "Langer lopen wordt weer gewoon", blocks: ["14 km op 6:40–7:20/km", "Neem drinken mee"] }),
   ]},
-  { week: 3, dates: "7–13 dec", phase: "Fase 1 · Weer op gang", note: "Doordeweeks een paar vlotte minuten, in het weekend al 11 km.", sessions: [
-    d1({ zone: "interval", km: 6.5, title: "5× 1 minuut vlot", goal: "Even voelen hoe snel voelt", blocks: [
+  { week: 3, dates: "7–13 dec", phase: "Fase 1 · Weer op gang", note: "Doordeweeks een paar vlotte minuten, in het weekend al 16 km.", sessions: [
+    d1({ zone: "interval", km: 7, title: "6× 1 minuut vlot", goal: "Even voelen hoe snel voelt", blocks: [
       "2 km rustig inlopen",
-      "5× 1 min vlot op 4:55–5:10/km, met 2 min rustig ertussen",
-      "Rustig uitlopen tot 6,5 km",
+      "6× 1 min vlot op 4:55–5:10/km, met 2 min rustig ertussen",
+      "Rustig uitlopen tot 7 km",
     ] }),
-    d2({ zone: "lang", km: 11, title: "11 km rustig", goal: "Over de 10 km heen", blocks: ["11 km op 6:40–7:20/km", "Neem iets te drinken mee als je dat fijn vindt"] }),
+    d2({ zone: "lang", km: 16, title: "16 km rustig", goal: "Op weg naar de halve", blocks: [
+      "16 km op 6:40–7:20/km",
+      "Oefen vanaf nu met eten onderweg: na een uur een gelletje of een paar snoepjes",
+    ] }),
   ]},
   { week: 4, dates: "14–20 dec", phase: "Fase 1 · Weer op gang", recovery: true, note: "Rustweek. Even minder, zodat je lijf de eerste drie weken kan verwerken. Daar word je sterker van.", sessions: [
-    d1({ zone: "duur", km: 5, title: "Rustige 5 km", goal: "Herstellen", blocks: ["5 km op 6:30–7:10/km"] }),
-    d2({ zone: "lang", km: 8, title: "8 km rustig", goal: "Lekker lopen, niets bewijzen", blocks: ["8 km op 6:40–7:20/km"] }),
+    d1({ zone: "duur", km: 6, title: "Rustige 6 km", goal: "Herstellen", blocks: ["6 km op 6:30–7:10/km"] }),
+    d2({ zone: "lang", km: 12, title: "12 km rustig", goal: "Lekker lopen, niets bewijzen", blocks: ["12 km op 6:40–7:20/km"] }),
   ]},
 
   /* ---------- Fase 2 · Basis ---------- */
   { week: 5, dates: "21–27 dec", phase: "Fase 2 · Basis", note: "Kerstweek! Kies zelf je momenten rond de feestdagen. Een lange loop op tweede kerstdag is trouwens heerlijk.", sessions: [
-    d1({ zone: "tempo", km: 7, title: "3× 5 minuten stevig", goal: "Een hoger tempo vasthouden", blocks: [
+    d1({ zone: "tempo", km: 8, title: "3× 6 minuten stevig", goal: "Een hoger tempo vasthouden", blocks: [
       "2 km rustig inlopen",
-      "3× 5 min stevig op 5:15–5:30/km, met 2 min rustig ertussen",
-      "Rustig uitlopen tot 7 km",
+      "3× 6 min stevig op 5:15–5:30/km, met 2 min rustig ertussen",
+      "Rustig uitlopen tot 8 km",
     ] }),
-    d2({ zone: "lang", km: 13, title: "13 km rustig", goal: "Kerstkilometers", blocks: ["13 km op 6:40–7:20/km", "Neem wat te drinken mee"] }),
+    d2({ zone: "lang", km: 18, title: "18 km rustig", goal: "Kerstkilometers", blocks: ["18 km op 6:40–7:20/km", "Drinken en een gelletje mee"] }),
   ]},
-  { week: 6, dates: "28 dec–3 jan", phase: "Fase 2 · Basis", note: "Oud en nieuw. Je eerste loop van 2027 wordt meteen 15 km!", sessions: [
-    d1({ zone: "duur", km: 7, title: "7 km met versnellingen", goal: "Soepel het jaar uit", blocks: ["6 km rustig op 6:30–7:10/km", "6× 20 sec soepel versnellen aan het eind"] }),
-    d2({ zone: "lang", km: 15, title: "15 km rustig", goal: "Langer dan ooit deze winter", blocks: [
-      "15 km op 6:40–7:20/km",
-      "Oefen vanaf nu met eten onderweg: na een uur een gelletje of een paar snoepjes",
+  { week: 6, dates: "28 dec–3 jan", phase: "Fase 2 · Basis", note: "Oud en nieuw. Je eerste lange loop van 2027 is meteen een halve marathon!", sessions: [
+    d1({ zone: "duur", km: 8, title: "8 km met versnellingen", goal: "Soepel het jaar uit", blocks: ["7 km rustig op 6:30–7:10/km", "6× 20 sec soepel versnellen aan het eind"] }),
+    d2({ zone: "lang", km: 21.1, title: "21,1 km rustig", goal: "Een halve marathon, maar dan als training", blocks: [
+      "21,1 km op 6:40–7:20/km",
+      "Veel rustiger dan in april, dat is precies de bedoeling",
+      "Eet en drink onderweg, net zoals je straks in maart doet",
     ] }),
   ]},
   { week: 7, dates: "4–10 jan", phase: "Fase 2 · Basis", note: "Voor het eerst een stuk op marathontempo. Zo leer je hoe 4 uur voelt.", sessions: [
-    d1({ zone: "doel", km: 8, title: "2× 3 km op marathontempo", goal: "Voelen hoe rond de 4 uur loopt", blocks: [
-      "1 km rustig inlopen",
+    d1({ zone: "doel", km: 9, title: "2× 3 km op marathontempo", goal: "Voelen hoe rond de 4 uur loopt", blocks: [
+      "2 km rustig inlopen",
       "2× 3 km op 5:35–5:45/km, met 3 min rustig ertussen",
-      "Rustig uitlopen tot 8 km",
+      "Rustig uitlopen tot 9 km",
     ] }),
-    d2({ zone: "lang", km: 17, title: "17 km rustig", goal: "Tijd op je benen", blocks: ["17 km op 6:40–7:20/km", "Drinken en een gelletje mee"] }),
+    d2({ zone: "lang", km: 23, title: "23 km rustig", goal: "Voorbij de halve", blocks: ["23 km op 6:40–7:20/km", "Elk half uur een paar slokken, elk uur een gelletje"] }),
   ]},
   { week: 8, dates: "11–17 jan", phase: "Fase 2 · Basis", recovery: true, note: "Rustweek met een testje: in het weekend loop je 10 km zo snel als het die dag gaat. Daarmee weten we of 4 uur erin zit.", sessions: [
     d1({ zone: "duur", km: 6, title: "Rustig met versnellingen", goal: "Fris worden voor je test", blocks: ["5 km rustig", "4× 20 sec soepel versnellen"] }),
@@ -179,59 +184,61 @@ const PLAN = [
   ]},
 
   /* ---------- Fase 3 · Lange duurlopen ---------- */
-  { week: 9, dates: "18–24 jan", phase: "Fase 3 · Lange duurlopen", note: "De halve marathon-afstand, net als in april. Alleen nu rustig, als training.", sessions: [
-    d1({ zone: "tempo", km: 8, title: "4× 1 km stevig", goal: "Sterker op tempo", blocks: [
+  { week: 9, dates: "18–24 jan", phase: "Fase 3 · Lange duurlopen", note: "Na je test gaan de lange lopen echt omhoog. Vanaf nu is elke lange loop een nieuw record.", sessions: [
+    d1({ zone: "tempo", km: 9, title: "4× 1 km stevig", goal: "Sterker op tempo", blocks: [
       "2 km rustig inlopen",
       "4× 1 km stevig op 5:15–5:30/km, met 2 min rustig ertussen",
-      "Rustig uitlopen tot 8 km",
+      "Rustig uitlopen tot 9 km",
     ] }),
-    d2({ zone: "lang", km: 21.1, title: "21,1 km rustig", goal: "Een halve marathon, maar dan als training", blocks: [
-      "21,1 km op 6:40–7:20/km",
-      "Veel rustiger dan in april, dat is precies de bedoeling",
-      "Eet en drink onderweg, net zoals je straks in maart doet",
-    ] }),
+    d2({ zone: "lang", km: 26, title: "26 km rustig", goal: "Je langste loop tot nu toe", blocks: ["26 km op 6:40–7:20/km", "Oefen met wat je op de marathon wil eten en drinken"] }),
   ]},
-  { week: 10, dates: "25–31 jan", phase: "Fase 3 · Lange duurlopen", note: "Voorbij de halve. Vanaf nu is elke lange loop een nieuw record.", sessions: [
-    d1({ zone: "doel", km: 9, title: "2× 3 km op marathontempo", goal: "Je marathontempo vasthouden", blocks: [
+  { week: 10, dates: "25–31 jan", phase: "Fase 3 · Lange duurlopen", note: "Doordeweeks langer op marathontempo, in het weekend 28 km.", sessions: [
+    d1({ zone: "doel", km: 10, title: "2× 4 km op marathontempo", goal: "Je marathontempo vasthouden", blocks: [
       "1,5 km rustig inlopen",
-      "2× 3 km op 5:35–5:45/km, met 2 min rustig ertussen",
-      "Rustig uitlopen tot 9 km",
-    ] }),
-    d2({ zone: "lang", km: 24, title: "24 km rustig", goal: "Je langste loop tot nu toe", blocks: ["24 km op 6:40–7:20/km", "Elk half uur een paar slokken, elk uur een gelletje"] }),
-  ]},
-  { week: 11, dates: "1–7 feb", phase: "Fase 3 · Lange duurlopen", note: "Doordeweeks 5 km aan één stuk op marathontempo, in het weekend 26 km.", sessions: [
-    d1({ zone: "doel", km: 9, title: "5 km op marathontempo", goal: "Aan één stuk op tempo", blocks: [
-      "2 km rustig inlopen",
-      "5 km op 5:35–5:45/km",
-      "Rustig uitlopen tot 9 km",
-    ] }),
-    d2({ zone: "lang", km: 26, title: "26 km rustig", goal: "Weer een nieuw record", blocks: ["26 km op 6:40–7:20/km", "Oefen met wat je op de marathon wil eten en drinken"] }),
-  ]},
-  { week: 12, dates: "8–14 feb", phase: "Fase 3 · Lange duurlopen", recovery: true, note: "Rustweek. Minder kilometers, zodat je straks fris aan je twee langste lopen begint.", sessions: [
-    d1({ zone: "duur", km: 6, title: "Rustige 6 km", goal: "Herstellen", blocks: ["6 km op 6:30–7:10/km"] }),
-    d2({ zone: "lang", km: 16, title: "16 km rustig", goal: "Lekker lopen, niets bewijzen", blocks: ["16 km op 6:40–7:20/km"] }),
-  ]},
-
-  /* ---------- Fase 4 · Piek ---------- */
-  { week: 13, dates: "15–21 feb", phase: "Fase 4 · Piek", note: "De zwaarste twee weken van je schema. Slaap goed en eet genoeg, dan kun je dit.", sessions: [
-    d1({ zone: "doel", km: 10, title: "3× 2 km op marathontempo", goal: "Tempo vasthouden als je al moe bent", blocks: [
-      "2 km rustig inlopen",
-      "3× 2 km op 5:35–5:45/km, met 2 min rustig ertussen",
+      "2× 4 km op 5:35–5:45/km, met 2 min rustig ertussen",
       "Rustig uitlopen tot 10 km",
     ] }),
-    d2({ zone: "lang", km: 28, title: "28 km rustig", goal: "Bijna 30", blocks: ["28 km op 6:40–7:20/km", "Neem genoeg mee: drinken en een gelletje per 45 min"] }),
+    d2({ zone: "lang", km: 28, title: "28 km rustig", goal: "Weer een nieuw record", blocks: ["28 km op 6:40–7:20/km", "Drinken en een gelletje per 45 min"] }),
   ]},
-  { week: 14, dates: "22–28 feb", phase: "Fase 4 · Piek", note: "Je langste loop: 30 km! Daarna gaat het alleen nog maar rustiger.", sessions: [
-    d1({ zone: "doel", km: 10, title: "6 km op marathontempo", goal: "Je generale op tempo", blocks: [
+  { week: 11, dates: "1–7 feb", phase: "Fase 3 · Lange duurlopen", note: "Je eerste 30 km! Neem er de tijd voor en kies een mooie route.", sessions: [
+    d1({ zone: "doel", km: 10, title: "6 km op marathontempo", goal: "Aan één stuk op tempo", blocks: [
       "2 km rustig inlopen",
       "6 km op 5:35–5:45/km",
       "Rustig uitlopen tot 10 km",
     ] }),
-    d2({ zone: "lang", km: 30, title: "🌟 30 km, je langste loop", goal: "Hierna weet je: ik kan het", why: "Dit is de belangrijkste training van je hele schema. Na 30 km weet je lijf én je hoofd dat de marathon gaat lukken. De laatste 12 km op de dag zelf loop je op adrenaline en publiek. Doe precies wat je op 14 maart ook doet: hetzelfde ontbijt, dezelfde schoenen, hetzelfde eten onderweg.", blocks: [
+    d2({ zone: "lang", km: 30, title: "🌟 Je eerste 30 km", goal: "Over de 30 heen", blocks: [
       "30 km op 6:40–7:20/km",
-      "Voelt het na 25 km nog goed? Dan mogen de laatste 2 km op marathontempo",
-      "Oefen je marathonontbijt en je eten onderweg",
+      "Rustiger starten dan je wil, de laatste 10 km worden zwaar",
+      "Neem genoeg mee: drinken en een gelletje per 45 min",
       "Daarna: goed eten, veel slapen. Je hebt het verdiend 💜",
+    ] }),
+  ]},
+  { week: 12, dates: "8–14 feb", phase: "Fase 3 · Lange duurlopen", recovery: true, note: "Rustweek. Minder kilometers, zodat je straks fris aan je langste loop begint.", sessions: [
+    d1({ zone: "duur", km: 7, title: "Rustige 7 km", goal: "Herstellen", blocks: ["7 km op 6:30–7:10/km"] }),
+    d2({ zone: "lang", km: 20, title: "20 km rustig", goal: "Lekker lopen, niets bewijzen", blocks: ["20 km op 6:40–7:20/km"] }),
+  ]},
+
+  /* ---------- Fase 4 · Piek ---------- */
+  { week: 13, dates: "15–21 feb", phase: "Fase 4 · Piek", note: "Je langste loop: 32 km! Daarna gaat het alleen nog maar rustiger.", sessions: [
+    d1({ zone: "doel", km: 11, title: "3× 3 km op marathontempo", goal: "Tempo vasthouden als je al moe bent", blocks: [
+      "1,5 km rustig inlopen",
+      "3× 3 km op 5:35–5:45/km, met 2 min rustig ertussen",
+      "Rustig uitlopen tot 11 km",
+    ] }),
+    d2({ zone: "lang", km: 32, title: "🌟 32 km, je langste loop", goal: "Hierna weet je: ik kan het", why: "Dit is de belangrijkste training van je hele schema. Na 32 km weet je lijf én je hoofd dat de marathon gaat lukken. De laatste 10 km op de dag zelf loop je op adrenaline en publiek. Doe precies wat je op 14 maart ook doet: hetzelfde ontbijt, dezelfde schoenen, hetzelfde eten onderweg.", blocks: [
+      "32 km op 6:40–7:20/km",
+      "Oefen je marathonontbijt en je eten onderweg",
+      "Draag wat je op de marathon ook aantrekt",
+      "Daarna: goed eten, veel slapen. Je hebt het verdiend 💜",
+    ] }),
+  ]},
+  { week: 14, dates: "22–28 feb", phase: "Fase 4 · Piek", note: "Nog één stevige week. Je lange loop is korter, maar met een flink stuk op marathontempo.", sessions: [
+    d1({ zone: "duur", km: 8, title: "8 km rustig", goal: "Herstellen van je 32 km", blocks: ["8 km op 6:30–7:10/km", "4× 20 sec soepel versnellen aan het eind"] }),
+    d2({ zone: "doel", km: 26, title: "26 km met 10 km op tempo", goal: "Je generale op marathontempo", blocks: [
+      "12 km rustig op 6:40–7:20/km",
+      "10 km op 5:35–5:45/km",
+      "4 km rustig uitlopen",
+      "Voelt het tempo zwaar? Dan zetten we je marathontempo samen iets bij",
     ] }),
   ]},
 
@@ -255,8 +262,8 @@ const PLAN = [
       "Rustig uitlopen tot 6 km",
       "Daarna rust tot zondag",
     ] }),
-    zo({ zone: "doel", kind: "Marathon", km: 42.2, title: "🏅 Je marathon", countdown: "marathon", goal: "De hele marathon lopen, rond de 4 uur als het lukt", why: "In november liep je 5 km en dat ging op het eind moeizaam. Vandaag loop je 42,2 km. Wat de klok ook zegt, dat is enorm. Het hoofddoel is finishen, rond de 4 uur is de bonus. De grootste fout op een marathon is te snel starten. Houd je daaraan, dan wordt het een feest.", blocks: [
-      "Ontbijt drie uur voor de start, wat je bij je 30 km ook at",
+    zo({ zone: "doel", kind: "Marathon", km: 42.2, title: "🏅 Je marathon", countdown: "marathon", goal: "De hele marathon lopen, rond de 4 uur als het lukt", why: "In november begon je weer, na een maand zonder lopen. Vandaag loop je 42,2 km. Wat de klok ook zegt, dat is enorm. Het hoofddoel is finishen, rond de 4 uur is de bonus. De grootste fout op een marathon is te snel starten. Houd je daaraan, dan wordt het een feest.", blocks: [
+      "Ontbijt drie uur voor de start, wat je bij je 32 km ook at",
       "De eerste 5 km op 5:50/km, echt niet sneller, ook al voelt het traag",
       "Daarna op 5:35–5:45/km",
       "Elke 30 à 40 min een gelletje, bij elke drankpost een paar slokken",
@@ -277,6 +284,23 @@ const INFO = [
     "Doel 2 is rond de 4 uur. Dat is 5:41 per kilometer, 42 km lang. Met twee loopdagen per week is dat ambitieus, maar niet onmogelijk.",
     "De 10 km tijdrit in januari (week 8) vertelt ons eerlijk wat erin zit. Daarna zet ik je tempo's bij.",
     "Twee keer per week is genoeg om de marathon uit te lopen. Voor rond de 4 uur is het krap. Heb je vanaf januari tijd en zin, dan helpt een derde rustige loop van 30 tot 40 minuten echt. Het hoeft niet.",
+  ]},
+  { icon: "🧠", title: "Waarom dit schema werkt", items: [
+    "De lange duurloop is de basis. Die groeit van 12 naar 32 km, met kleine stappen van zo'n 2 km per keer. Zo krijgen je spieren, pezen en botten de tijd om mee te groeien.",
+    "Elke vierde week is een rustweek (week 4, 8 en 12). Je wordt sterker als je lichaam kan herstellen, niet tijdens de training zelf.",
+    "Je loopt één keer 30 km (week 11) en één keer 32 km (week 13). Na die twee weet je lijf én je hoofd dat 42 km gaat lukken. De laatste 10 km op de dag zelf loop je op adrenaline en publiek.",
+    "Ongeveer 80% van je kilometers is rustig. Dat bouwt je uithoudingsvermogen zonder dat je moe of geblesseerd raakt.",
+    "Doordeweeks train je specifiek: eerst vlot en stevig om sterker te worden, vanaf januari op marathontempo. Zo wordt 5:40 per kilometer vertrouwd.",
+    "In week 14 loop je 10 km op marathontempo in een lange loop. Dat is je generale: lukt dat, dan zit je goed.",
+    "De laatste twee weken bouw je af. Minder kilometers, wel nog even op tempo. Zo sta je fris én scherp aan de start.",
+    "Elke lange loop oefen je met eten en drinken. Veel marathons gaan mis op energie, niet op conditie. Jij hebt dat dan al tien keer geoefend.",
+  ]},
+  { icon: "✅", title: "Zo haal je het zeker", items: [
+    "De lange duurloop in het weekend sla je nooit over. Is het weekend vol? Schuif hem dan naar maandag, en maak de doordeweekse training die week kort.",
+    "Mis je toch een lange loop? Dan loop je de volgende week niet ineens veel verder. Neem de afstand van de gemiste week en ga daarna weer verder met het schema.",
+    "Rustig is echt rustig. De grootste valkuil is je lange loop te snel lopen. Dan ben je moe voor de volgende training en loop je meer kans op blessures.",
+    "Ziek of iets opspelen rond de 30 of 32 km? Laat het me meteen weten, dan passen we het samen aan. Er zit genoeg ruimte in het schema.",
+    "Na week 8 en na week 14 kijken we samen naar je tijden. Dan zetten we je tempo's bij, zodat je op 14 maart precies goed start.",
   ]},
   { icon: "🗓️", title: "Zo werkt je week", items: [
     "Je loopt twee keer per week: één keer doordeweeks en één keer in het weekend. Wanneer precies kies je zelf.",
@@ -309,7 +333,7 @@ const INFO = [
   { icon: "👟", title: "Schoenen en kleding", items: [
     "Loop je marathon op schoenen die je al kent, met minstens 50 km erop. Nieuwe schoenen op de dag zelf is vragen om blaren.",
     "Liep je in april ook al op dit paar? Kijk of ze nog goed zijn. Na zo'n 600 à 800 km zijn ze vaak op.",
-    "Draag op je 30 km precies wat je op de marathon aantrekt.",
+    "Draag op je 32 km precies wat je op de marathon aantrekt.",
   ]},
   { icon: "🌙", title: "Lopen in de winter", items: [
     "Jouw schema loopt precies door de donkere maanden. Reflectie of een lampje is geen luxe.",
@@ -338,7 +362,8 @@ const BADGES = [
   { id: "halve",   icon: "🌗", name: "Halve marathon",    desc: "21,1 km in één training",    test: (s) => s.maxDist >= 21 },
   { id: "streak",  icon: "🔥", name: "Op dreef",          desc: "Reeks van 8 trainingen",     test: (s) => s.streak >= 8 },
   { id: "half",    icon: "⚡", name: "Halverwege",        desc: "50% van je schema",          test: (s) => s.done >= s.total / 2 },
-  { id: "dertig",  icon: "🌟", name: "30 km",             desc: "Je langste loop gedaan",     test: (s) => s.maxDist >= 30 },
+  { id: "dertig",  icon: "🌟", name: "30 km",             desc: "Je eerste 30 km gelopen",    test: (s) => s.maxDist >= 30 },
+  { id: "tweedertig", icon: "💪", name: "32 km",          desc: "Je langste loop gedaan",     test: (s) => s.maxDist >= 32 },
   { id: "km300",   icon: "🚀", name: "300 km",            desc: "300 km totaal gelopen",      test: (s) => s.km >= 300 },
   { id: "marathon",icon: "🏅", name: "Marathonloper",     desc: "De hele marathon gelopen",   test: (s) => s.raceDone },
   { id: "vieruur", icon: "💜", name: "Rond de 4 uur",     desc: "Marathon in 4:05 of sneller", test: (s) => s.vierUur },
